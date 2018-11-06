@@ -21,16 +21,16 @@ var masterTicketList = [
 
 function TicketList(){
   return (
-  <div>
-    <hr/>
+    <div>
+      <hr/>
       {masterTicketList.map((ticket, index) =>
         <Ticket location={ticket.location}
-        names={ticket.names}
-        issue={ticket.issue}
-        key={index}
+          names={ticket.names}
+          issue={ticket.issue}
+          key={index}
         />
       )}
-  </div>
+    </div>
   );
 }
 

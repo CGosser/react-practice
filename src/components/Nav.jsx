@@ -10,17 +10,24 @@ function NavBar(){
   };
   var aStyles = {
     cursor: "crosshair",
-    textDecoration: "none",
-    color: "black",
     fontWeight: "bolder",
     textTransform: "uppercase"
   };
   return (
     <ul style={navStyles}>
-      <li><a style={aStyles} href="#">about</a></li>
-      <li><a style={aStyles} href="#">shop</a></li>
-      <li><a style={aStyles} href="#">party</a></li>
-      <li><a style={aStyles} href="#">fnord</a></li>
+      <li><a className="color-toggle" style={aStyles} href="#">about</a></li>
+      <li><a className="color-toggle" style={aStyles} href="#">shop</a></li>
+      <li><a style={aStyles} className="color-toggle"  href="#">party</a></li>
+      <li><a style={aStyles} className="color-toggle" href="#">fnord</a></li>
+        <style jsx>{`
+            .color-toggle{
+              text-decoration: none;
+              color: black;
+            }
+            .color-toggle:hover {
+              text-decoration: underline;
+            }
+          `}</style>
     </ul>
   );
 }

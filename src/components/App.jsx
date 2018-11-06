@@ -7,9 +7,14 @@ import ContentContainer from "./ContentContainer";
 function App(){
   return (
     <div>
+      <style global jsx>{`
+        * {
+          padding: none;
+          margin: none;
+        }
+        `}</style>
       <Header/>
       <ContentContainer/>
-      <TicketList/>
     </div>
   );
 }
