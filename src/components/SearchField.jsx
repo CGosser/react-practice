@@ -5,7 +5,6 @@ function SearchField(){
     height: 20,
     width: "10%",
     paddingLeft: "2em",
-    borderRadius: 5,
     marginTop: "3em",
     borderWidth: "thin",
     borderColor: "black",

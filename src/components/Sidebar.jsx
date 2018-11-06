@@ -5,7 +5,7 @@ function SideBar(){
     position: "absolute",
     width: "10%",
     listStyle: "none",
-    left: "-125px",
+    left: "-175px",
     marginTop: 0,
   }
   var bullets = {
@@ -17,13 +17,20 @@ function SideBar(){
     justifyContent: "space-between",
     height: 400
   }
+  var aStyles = {
+    cursor: "crosshair",
+    textDecoration: "none",
+    color: "black",
+    fontWeight: "bolder",
+    textTransform: "uppercase"
+  }
   return (
   <div style={SideBarStyles}>
     <ul style={bullets}>
-      <li>link</li>
-      <li>categories</li>
-      <li>stuff</li>
-      <li>stuffs</li>
+      <li style={aStyles}>link</li>
+      <li style={aStyles}>categories</li>
+      <li style={aStyles}>stuff</li>
+      <li style={aStyles}>stuffs</li>
     </ul>
   </div>
   );

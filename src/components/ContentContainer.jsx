@@ -5,7 +5,7 @@ import MainContent from "./MainContent"
 function ContentContainer(){
   var containerStyle = {
     position: "relative",
-    marginTop: 0,
+    marginTop: 100,
     marginLeft: "auto",
     marginRight: "auto",
     width: "45%",
