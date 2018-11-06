@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function NavBar(){
   var navStyles = {
@@ -16,18 +17,18 @@ function NavBar(){
   return (
     <ul style={navStyles}>
       <li><a className="color-toggle" style={aStyles} href="#">about</a></li>
-      <li><a className="color-toggle" style={aStyles} href="#">shop</a></li>
+      <li><a className="color-toggle" style={aStyles} href="#/Shop">shop</a></li>
       <li><a style={aStyles} className="color-toggle"  href="#">party</a></li>
       <li><a style={aStyles} className="color-toggle" href="#">fnord</a></li>
-        <style jsx>{`
-            .color-toggle{
-              text-decoration: none;
-              color: black;
-            }
-            .color-toggle:hover {
-              text-decoration: underline;
-            }
-          `}</style>
+      <style jsx>{`
+          .color-toggle{
+            text-decoration: none;
+            color: black;
+          }
+          .color-toggle:hover {
+            text-decoration: underline;
+          }
+      `}</style>
     </ul>
   );
 }

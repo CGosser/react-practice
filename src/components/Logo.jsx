@@ -8,7 +8,7 @@ function Logo(){
     paddingLeft: 50
   };
   return (
-    <img style={logoStyles} src={image}/>
+    <a href="#"><img style={logoStyles} src={image}/></a>
   );
 }
 

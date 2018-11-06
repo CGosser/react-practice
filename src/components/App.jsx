@@ -4,6 +4,7 @@ import TicketList from "./TicketList";
 import MyStyledComponent from "./MyStyledComponent";
 import ContentContainer from "./ContentContainer";
 import { Switch, Route } from 'react-router-dom';
+import Shop from './Shop';
 
 function App(){
   return (
@@ -15,7 +16,10 @@ function App(){
         }
         `}</style>
           <Header/>
-          <ContentContainer/>
+          <Switch>
+            <Route exact path='/' component={ContentContainer} />
+            <Route path='/Shop' component={Shop} />
+          </Switch>
     </div>
   );
 }
