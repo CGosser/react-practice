@@ -1,25 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Shop(){
-return (
-    <div>
-      <form>
-        <input
-          type='text'
-          id='names'
-          placeholder='Pair Names'/>
-        <input
-          type='text'
-          id='location'
-          placeholder='Location'/>
-        <textarea
-          id='issue'
-          placeholder='Describe your issue.'/>
-        <button type='submit'>Help!</button>
-      </form>
-    </div>
+function Shop(props){
+  var shopStyles = {
+    backgroundImage: props.image,
+    height: 500,
+    width: 500,
+    backgroundSize: 'contain',
+    backgroundRepeat: 'no-repeat'
+  };
+  return (
+      <div style={shopStyles}>
+        <h2>{props.price}</h2>
+        <p>{props.info}</p>
+      </div>
   );
 }
-
+Shop.propTypes = {
+  image: PropTypes.string,
+  price: PropTypes.string,
+  info: PropTypes.string
+};
 export default Shop;

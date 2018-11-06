@@ -5,6 +5,7 @@ import MyStyledComponent from "./MyStyledComponent";
 import ContentContainer from "./ContentContainer";
 import { Switch, Route } from 'react-router-dom';
 import Shop from './Shop';
+import ShopItems from './ShopItems'
 
 function App(){
   return (
@@ -15,11 +16,11 @@ function App(){
           margin: none;
         }
         `}</style>
-          <Header/>
-          <Switch>
-            <Route exact path='/' component={ContentContainer} />
-            <Route path='/Shop' component={Shop} />
-          </Switch>
+      <Header/>
+      <Switch>
+        <Route exact path='/' component={ContentContainer} />
+        <Route path='/Shop' component={ShopItems} />
+      </Switch>
     </div>
   );
 }

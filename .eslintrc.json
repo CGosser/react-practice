@@ -26,7 +26,7 @@
         2
       ],
     "react/jsx-pascal-case": 2,
-    "react/prop-types": 2,
+    "react/prop-types": 1,
     "react/jsx-indent": [
         "warn",
         2
