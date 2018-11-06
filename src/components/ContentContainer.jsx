@@ -1,6 +1,6 @@
 import React from "react";
 import SideBar from "./SideBar";
-import MainContent from "./MainContent"
+import MainContent from "./MainContent";
 
 function ContentContainer(){
   var containerStyle = {
@@ -9,13 +9,13 @@ function ContentContainer(){
     marginLeft: "auto",
     marginRight: "auto",
     width: "45%",
-  }
+  };
   return (
-      <div style={containerStyle}>
-        <SideBar/>
-        <MainContent/>
-      </div>
-   );
+    <div style={containerStyle}>
+      <SideBar/>
+      <MainContent/>
+    </div>
+  );
 }
 
 // Ticket.propTypes = {

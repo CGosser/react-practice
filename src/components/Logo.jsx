@@ -6,7 +6,7 @@ function Logo(){
     width: 85,
     height: 85,
     paddingLeft: 50
-   }
+  };
   return (
     <img style={logoStyles} src={image}/>
   );

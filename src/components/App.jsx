@@ -7,8 +7,9 @@ import ContentContainer from "./ContentContainer";
 function App(){
   return (
     <div>
-    <Header/>
-    <ContentContainer/>
+      <Header/>
+      <ContentContainer/>
+      <TicketList/>
     </div>
   );
 }

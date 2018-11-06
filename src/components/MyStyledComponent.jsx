@@ -5,7 +5,7 @@ function MyStyledComponent(props) {
     backgroundColor: '#ecf0f1',
     fontFamily: 'sans-serif',
     paddingTop: '50px'
-  }
+  };
   return (
     <div style={MyStyledComponentStyles}>
       <h1>Hey, I'm a component</h1>

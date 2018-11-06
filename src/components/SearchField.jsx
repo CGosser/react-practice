@@ -11,10 +11,10 @@ function SearchField(){
     borderTop: "hidden",
     borderLeft: "hidden",
     borderRight: "hidden"
-  }
+  };
   return (
-  <input style={searchStyles} placeholder="search . . .">
-  </input>
+    <input style={searchStyles} placeholder="search . . .">
+    </input>
   );
 }
 
