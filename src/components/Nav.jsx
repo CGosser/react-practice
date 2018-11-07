@@ -16,7 +16,7 @@ function NavBar(){
   };
   return (
     <ul style={navStyles}>
-      <li><a className="color-toggle" style={aStyles} href="#">about</a></li>
+      <li><a className="color-toggle" style={aStyles} href="#/About">about</a></li>
       <li><a className="color-toggle" style={aStyles} href="#/Shop">shop</a></li>
       <li><a style={aStyles} className="color-toggle"  href="#/Party">party</a></li>
       <li><a style={aStyles} className="color-toggle" href="#/fnord">fnord</a></li>

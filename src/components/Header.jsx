@@ -9,6 +9,8 @@ function Header(){
     display: "flex",
     justifyContent: "space-between",
     width: "100%",
+    paddingTop: 20,
+    paddingLeft: 20
   };
   return (
     <div style={HeaderStyles}>

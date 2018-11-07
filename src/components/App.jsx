@@ -8,14 +8,15 @@ import Shop from './Shop';
 import ShopItems from './ShopItems';
 import fnordersmarketlist from './fnordersmarketlist';
 import PartyItems from './PartyItems';
+import About from './About';
 
 function App(){
   return (
     <div>
       <style global jsx>{`
         * {
-          padding: none;
-          margin: none;
+          padding: 0;
+          margin: 0;
         }
         `}</style>
       <Header/>
@@ -24,6 +25,7 @@ function App(){
         <Route path='/Shop' component={ShopItems} />
         <Route path='/fnord' component={fnordersmarketlist}/>
         <Route path='/Party' component={PartyItems} />
+        <Route path='/About' component={About} />
       </Switch>
     </div>
   );
