@@ -32,7 +32,7 @@ function ShopItems(){
     marginLeft: 'auto',
     marginRight: 'auto',
     gridTemplateColumns: 'repeat(2, 1fr)'
-  }
+  };
   return (
     <div style={shopContainer}>
       {masterShopList.map((item, index) =>

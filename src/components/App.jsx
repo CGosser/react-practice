@@ -5,7 +5,8 @@ import MyStyledComponent from "./MyStyledComponent";
 import ContentContainer from "./ContentContainer";
 import { Switch, Route } from 'react-router-dom';
 import Shop from './Shop';
-import ShopItems from './ShopItems'
+import ShopItems from './ShopItems';
+import fnordersmarketlist from './fnordersmarketlist';
 
 function App(){
   return (
@@ -20,6 +21,8 @@ function App(){
       <Switch>
         <Route exact path='/' component={ContentContainer} />
         <Route path='/Shop' component={ShopItems} />
+        <Route path='/fnord' component={fnordersmarketlist}/>
+
       </Switch>
     </div>
   );

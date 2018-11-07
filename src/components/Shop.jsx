@@ -10,10 +10,10 @@ function Shop(props){
     backgroundRepeat: 'no-repeat'
   };
   return (
-      <div style={shopStyles}>
-        <h2>{props.price}</h2>
-        <p>{props.info}</p>
-      </div>
+    <div style={shopStyles}>
+      <h2>{props.price}</h2>
+      <p>{props.info}</p>
+    </div>
   );
 }
 Shop.propTypes = {
