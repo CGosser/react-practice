@@ -7,6 +7,7 @@ import { Switch, Route } from 'react-router-dom';
 import Shop from './Shop';
 import ShopItems from './ShopItems';
 import fnordersmarketlist from './fnordersmarketlist';
+import PartyItems from './PartyItems';
 
 function App(){
   return (
@@ -22,7 +23,7 @@ function App(){
         <Route exact path='/' component={ContentContainer} />
         <Route path='/Shop' component={ShopItems} />
         <Route path='/fnord' component={fnordersmarketlist}/>
-
+        <Route path='/Party' component={PartyItems} />
       </Switch>
     </div>
   );
